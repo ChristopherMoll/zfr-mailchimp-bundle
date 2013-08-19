@@ -1,6 +1,6 @@
 <?php
 
-namespace ZFR\MailChimpBundle\Services;
+namespace ZfrMailChimpBundle\Services;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use ZfrMailChimp\Client\MailChimpClient;
@@ -8,7 +8,16 @@ use Guzzle\Plugin\Async\AsyncPlugin;
 
 class MailChimpHandler {
 
+    /**
+    * MailChimp API key set in app/config/config.yml
+    * @var string 
+    */
     private $apiKey;
+    
+    /**
+    * Guzzle Async plugin on/off, set in app/config/config.yml
+    * @var bool
+    */
     private $async;
 
     /**
