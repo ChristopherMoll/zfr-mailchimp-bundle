@@ -2,6 +2,6 @@ parameters:
 #    zfr_mailchimp.example.class: ZfrMailChimpBundle\Example
 
 services:
-  zfr_mailchimp:
+  zfr_mail_chimp:
     class: ZfrMailChimpBundle\Services\MailChimpHandler
     arguments: [%zfr_mailchimp.api_key%,%zfr_mailchimp.async%]
